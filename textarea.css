@@ -1,0 +1,117 @@
+body {
+  background: #ffff66;
+  font-family: 'PT Sans', 'lucida grande', sans-serif;
+  position: relative;
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li {
+  font-family: 'PT Sans', 'lucida grande', sans-serif;
+  font-weight: normal;
+  color: rgba(255,255,255,0.4);
+}
+
+.screen-cover {
+  background: rgba(0,0,0,0.75);
+  position: fixed;
+  z-index: -1;
+}
+
+.screen-cover.top {
+  left: 1%;
+  top: 2%;
+  height: 10%;
+  width: 98%;
+}
+
+.screen-cover.rt {
+  right: 14.1%;
+  top: 12%;
+  height: 11%;
+  width: 5.9%;
+  /* border-top-left-radius: 0.6em; */
+  /* border-bottom-right-radius: 1em; */
+  border-bottom-left-radius: 0.6em;
+}
+.screen-cover.rt-2 {
+  right: 1%;
+  top: 12%;
+  height: 15%;
+  width: 13.1%;
+}
+
+.screen-cover.logo {
+  right: 21%;
+  top: 15%;
+  height: 14px;
+  width: 14px;
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 45em;
+}
+
+.logo-pair {
+  right: 11.5%;
+  top: 31%;
+  border-radius: 45em;
+  z-index: 19;
+  min-height:;
+}
+
+.screen-cover.logo-text {
+  background: none;
+  height: 2%;
+  width: 9.6%;
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 0.8em;
+}
+
+.screen-cover.logo-dot{
+  background: rgba(255, 255, 255, 0.51);
+  height: 7px;
+  width: 25px;
+  right: 13vw;
+  top: 17.5vw;
+}
+
+.screen-cover.bot {
+  left: 1%;
+  bottom: 2%;
+  height: 71%;
+  width: 98%;
+}
+.screen-cover.lf {
+  left: 1%;
+  top: 12%;
+  height: 15%;
+  width: 76%;
+  border-top-right-radius: 0.7em;
+  /* border-bottom-right-radius: 0.6em; */
+}
+
+video#bgvid {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background: black;
+  background-size: cover;
+}
+
+textarea#styled {
+  width: 1600px;
+  height: 1200px;
+  border: 3px solid #cccccc;
+  padding: 5px;
+  font-family: Tahoma, sans-serif;
+  background-image: url(643.gif);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  font-size: 4em;
+  font-family: courier;
+}
+
+.text-copy {
+  /*background: rgba(255,255,255, 0.7);*/
+  color: white;
+  width: 30em;
+  padding: 1em;
+}
