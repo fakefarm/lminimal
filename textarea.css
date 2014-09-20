@@ -1,5 +1,5 @@
 body {
-  background: #ffff66;
+  background: #000;
   font-family: 'PT Sans', 'lucida grande', sans-serif;
   position: relative;
   font-size: 100%;
@@ -11,8 +11,43 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   color: rgba(255,255,255,0.4);
 }
 
+nav {
+    position: fixed;
+    top: 357px;
+    /* background: yellow; */
+    width: 100%;
+    left: 0;
+}
+
+nav ul {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  /* text-align: center; */
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: 100;
+  border-top: 2px solid black;
+  font-size: 1.3em;
+  width: 1200px / 7;
+  padding: 0 1.2em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-top: 2px solid rgba(226, 99, 191, 0.6);
+}
+
 .screen-cover {
-  background: rgba(0,0,0,0.75);
+  /* background: rgba(0,0,0,0.75); */
   position: fixed;
   z-index: -1;
 }
@@ -43,15 +78,15 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 .screen-cover.logo {
   right: 21%;
   top: 15%;
-  height: 14px;
+  height: 35px;
   width: 14px;
   background: rgba(255, 255, 255, 0.21);
-  border-radius: 45em;
+  border-radius: 0.18em;
 }
 
 .logo-pair {
-  right: 11.5%;
-  top: 31%;
+  right: 10%;
+  top: 17.8%;
   border-radius: 45em;
   z-index: 19;
   min-height:;
@@ -67,10 +102,20 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 
 .screen-cover.logo-dot{
   background: rgba(255, 255, 255, 0.51);
-  height: 7px;
-  width: 25px;
-  right: 13vw;
-  top: 17.5vw;
+  height: 10px;
+  width: 10px;
+  right: 20vw;
+  top: 9.9vw;
+}
+
+.worked-status {
+    right: 16%;
+    top: 20%;
+    color: #476f65;
+    border-top: 1px solid #476f65;
+    padding-top: 5px;
+    position: absolute;
+    font-size: 0.8em;
 }
 
 .screen-cover.bot {
@@ -89,7 +134,8 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 }
 
 video#bgvid {
-  position: fixed; right: 0; bottom: 0;
+  position: fixed; right: 0;
+  top: 392px;
   min-width: 100%; min-height: 100%;
   width: auto; height: auto; z-index: -100;
   background: black;
