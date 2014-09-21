@@ -46,6 +46,29 @@ nav a:hover {
   border-top: 2px solid rgba(226, 99, 191, 0.6);
 }
 
+.hero-image {
+  position: fixed;
+  right: 0;
+  top: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto; height: auto; z-index: -50;
+  background-size: cover;
+  display: none;
+}
+
+nav a:hover + .code-img {
+  background: url('images/code.png');
+  display: block;
+}
+
+nav a:hover + .design-img,
+nav a:hover + .video-img {
+  display: block;
+  z-index: -100;
+}
+
+
 .screen-cover {
   /* background: rgba(0,0,0,0.75); */
   position: fixed;
@@ -134,9 +157,11 @@ nav a:hover {
 }
 
 video#bgvid {
-  position: fixed; right: 0;
-  top: 392px;
-  min-width: 100%; min-height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0px;
+  min-width: 100%;
+  min-height: 100%;
   width: auto; height: auto; z-index: -100;
   background: black;
   background-size: cover;
@@ -160,4 +185,5 @@ textarea#styled {
   color: white;
   width: 30em;
   padding: 1em;
+  z-index: 100;
 }
