@@ -71,10 +71,13 @@ nav a:hover + .video-img {
 
 
 .screen-cover {
-  background: rgba(0,0,0,0.55);
+  background: rgba(0,0,0,0.35);
   position: fixed;
   border-radius: 5px;
-  border: 1px solid #0080ff;
+  border-top: 1px solid #3088ff;
+  border-bottom: 1px solid #0067cd;
+  border-left: 1px solid #1b94ff;
+  border-right: 1px solid #0080ff;
   z-index: -1;
   left: 1%;
   top: 2%;
